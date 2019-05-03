@@ -10,22 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_03_205052) do
+ActiveRecord::Schema.define(version: 2019_05_03_230155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "items", force: :cascade do |t|
-    t.integer "x"
-    t.integer "y"
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
   end
 
-  create_table "items_plots", id: false, force: :cascade do |t|
-    t.bigint "item_id", null: false
-    t.bigint "plot_id", null: false
+  create_table "items_plots", force: :cascade do |t|
+    t.integer "plot_id"
+    t.integer "item_id"
+    t.integer "x"
+    t.integer "y"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "plots", force: :cascade do |t|
