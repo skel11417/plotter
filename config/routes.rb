@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   get '/plots/:slug', to: 'plots#show'
   put '/plots/:slug', to: 'plots#update'
+  delete '/plots/:slug/', to: 'plots#delete'
 end

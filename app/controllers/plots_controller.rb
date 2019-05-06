@@ -10,4 +10,11 @@ class PlotsController < ApplicationController
     plot.update_plot(items)
     render json: plot
   end
+
+  def delete
+    plot = Plot.find(params[:slug])
+    plot_item = plot.items_plots.find(params["items_plots_id"])
+    plot_item.destroy
+    render json: plot
+  end
 end
