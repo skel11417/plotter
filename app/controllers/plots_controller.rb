@@ -1,6 +1,5 @@
 class PlotsController < ApplicationController
   def show
-    # byebug
     plot = Plot.find(params[:slug])
     render json: plot
   end
@@ -8,7 +7,7 @@ class PlotsController < ApplicationController
   def update
     plot = Plot.find(params[:slug])
     items = params[:items]
-    plot.update_items(items)
+    plot.update_plot(items)
     render json: plot
   end
 end
