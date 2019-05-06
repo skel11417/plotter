@@ -10,7 +10,7 @@ class Plot < ApplicationRecord
       plot_point = self.items_plots.find(item["id"])
       if plot_point
         # optimize this
-        plot_point.x, plot_point.y = item["x"], plot_point["y"]
+        plot_point.x, plot_point.y = item["x"], item["y"]
         plot_point.save
       end
     end
