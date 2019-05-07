@@ -1,6 +1,6 @@
 class PlotsController < ApplicationController
   # before_action :find_plot
-  def new
+  def create
     url = rand(36**8).to_s(36)
     plot = Plot.create(url: url)
     plot.update_plot(params[:items])
@@ -19,7 +19,7 @@ class PlotsController < ApplicationController
     render json: plot
   end
 
-  def delete
+  def destroy
     plot = Plot.find(params[:id])
     plot_item = plot.items_plots.find(params["items_plots_id"])
     plot_item.destroy

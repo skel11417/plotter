@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  post '/plots/new', to: 'plots#new'
+  # items
+  resources :items, only: [:index]
+
+  # plots
+  resources :plots, only: [:create, :update, :destroy]
+  # post '/plots/new', to: 'plots#create'
   get '/plots/:slug', to: 'plots#show'
-  put '/plots/:id', to: 'plots#update'
-  delete '/plots/:id/', to: 'plots#delete'
+
 end
