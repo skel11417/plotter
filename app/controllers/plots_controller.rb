@@ -1,4 +1,12 @@
 class PlotsController < ApplicationController
+
+  def new
+    url = rand(36**8).to_s(36)
+    plot = Plot.create(url: url)
+    plot.update_plot(params[:items])
+    render json: plot
+  end
+
   def show
     plot = Plot.find(params[:slug])
     render json: plot
