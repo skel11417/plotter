@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   # plots
   resources :plots, only: [:create, :update, :destroy]
-  # post '/plots/new', to: 'plots#create'
   get '/plots/:slug', to: 'plots#show'
 
 end

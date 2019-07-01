@@ -12,7 +12,7 @@ class Plot < ApplicationRecord
       if !item.key?("items_plots_id")
         self.items << Item.find(item["id"])
         plot_point = self.items_plots.last
-        plot_point.x, plot_point.y = 0, 0
+        plot_point.x, plot_point.y = item["x"], item["y"]
         plot_point.save
       else
         plot_point = self.items_plots.find(item["items_plots_id"])

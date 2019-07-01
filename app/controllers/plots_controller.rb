@@ -1,5 +1,5 @@
 class PlotsController < ApplicationController
-  # before_action :find_plot
+
   def create
     url = rand(36**8).to_s(36)
     plot = Plot.create(url: url)
