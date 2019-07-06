@@ -20,7 +20,7 @@ items = [
   {name: 'cdj', image: 'cdj.png'},
   {name: 'clarinet', image: 'clarinet.png'},
   {name: 'guitar-amp-combo', image: 'guitar-amp-combo.png'},
-  {name: 'mic-stand-straight', image: 'mic-stand-straight.gif'},
+  {name: 'mic-stand-straight', image: 'mic-stand-straight.png'},
   {name: 'IEM-transmitter', image: 'IEM-transmitter.png'},
   {name: 'saxophone', image: 'saxophone.png'},
   {name: 'standup-bass', image: 'standup-bass.gif'},
