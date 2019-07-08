@@ -1,24 +1,14 @@
-# README
+# Stage Plotter
+[Live Demo](https://stage-plotter.herokuapp.com)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<!-- [![Alt text](https://img.youtube.com/vi/VID/0.jpg)](https://www.youtube.com/watch?v=VID) -->
 
-Things you may want to cover:
+Stage plotter is a single-page application built utilizing a React front end and a Rails API on the back end.
 
-* Ruby version
+The app is designed for musicians to quickly and intuitively construct a diagram of the layout of how they plan to position their equipment on stage.
 
-* System dependencies
+Each newly created plot generates a unique url that the user can bookmark and save for later. Stage Plots can be converted to PDF and downloaded to be shared with music venues.
 
-* Configuration
+The repo for the backend API of this project can be found [here](https://www.github.com/skel11417/todo-app-frontend)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
