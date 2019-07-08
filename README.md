@@ -9,6 +9,6 @@ The app is designed for musicians to quickly and intuitively construct a diagram
 
 Each newly created plot generates a unique url that the user can bookmark and save for later. Stage Plots can be converted to PDF and downloaded to be shared with music venues.
 
-The repo for the backend API of this project can be found [here](https://www.github.com/skel11417/todo-app-frontend)
+The repo for the frontend interface of this project can be found [here](https://www.github.com/skel11417/todo-app-frontend)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
