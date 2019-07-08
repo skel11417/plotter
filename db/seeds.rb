@@ -4,7 +4,7 @@
 Plot.destroy_all
 Item.destroy_all
 ItemsPlot.destroy_all
-p = Plot.create(url: 'sample')
+# p = Plot.create(url: 'sample')
 
 items = [
   {name: 'stage monitor', image: 'monitor.png'},
